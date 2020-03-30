@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Card from "./components/Card"
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import "bootstrap/dist/css/bootstrap.css"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Card />
   </React.StrictMode>,
   document.getElementById('root')
 );

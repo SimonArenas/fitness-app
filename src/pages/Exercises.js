@@ -3,6 +3,7 @@ import Welcome from "../components/Welcome";
 import AddButton from "../components/AddButton";
 
 import React, { Component } from "react";
+import ExerciseNew from "./ExerciseNew";
 
 class Exercises extends Component {
   constructor(props) {
@@ -46,6 +47,7 @@ class Exercises extends Component {
         <Welcome username="Simón" />
         <ExerciseList exercises={this.state.data} />
         <AddButton />
+        <ExerciseNew/>
       </div>
     );
   }

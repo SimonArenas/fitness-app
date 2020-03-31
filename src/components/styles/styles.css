@@ -39,13 +39,27 @@
 .addImg img {
   width: 50px;
 }
+.Error__bg {
+  background-image: linear-gradient(
+    171.8deg,
+    rgba(5, 111, 146, 1) 13.5%,
+    rgba(6, 57, 84, 1) 78.6%
+  );
+
+  background-blend-mode: multiply, multiply;
+  width: 100vw;
+
+  height: 100vh;
+}
 
 .Error__container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  align-items: center;
+  height: 80vh;
 }
-.Error__img  img{
+.Error__img img {
   width: 60vw;
 }
 .Error_Text {
@@ -53,26 +67,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #e6e6e6;
 }
 
-
-.btn {
-  background: none;
+.error__btn {
+  background: white;
   border: none;
   cursor: pointer;
   line-height: 1.5;
   font: 700 1.2rem "Roboto Slab", sans-serif;
   margin-top: 20px;
-  padding: 1em 2em;
+  padding: .8em 1.5em;
   letter-spacing: 0.05rem;
 }
-.btn:focus {
+.error__btn:focus {
   outline: 2px dotted #55d7dc;
 }
-
-
-
-
 
 .hvr-underline-from-center {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -187,9 +197,6 @@
   animation-direction: normal, alternate;
 }
 
-
-
-
 .draw-border {
   box-shadow: inset 0 0 0 4px #58afd1;
   color: #58afd1;
@@ -197,7 +204,8 @@
   transition: color 0.25s 0.0833333333s;
   position: relative;
 }
-.draw-border::before, .draw-border::after {
+.draw-border::before,
+.draw-border::after {
   border: 0 solid transparent;
   box-sizing: border-box;
   content: "";
@@ -217,10 +225,11 @@
   border-right-width: 4px;
 }
 .draw-border:hover {
-  color: #E75454;
+  color: #e75454;
 }
-.draw-border:hover::before, .draw-border:hover::after {
-  border-color: #E75454;
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #e75454;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
@@ -228,13 +237,9 @@
 }
 .draw-border:hover::before {
   -webkit-transition-delay: 0s, 0s, 0.25s;
-          transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
 }
 .draw-border:hover::after {
   -webkit-transition-delay: 0s, 0.25s, 0s;
-          transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
 }
-
-
-
-

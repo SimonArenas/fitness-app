@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
-    <div>
+    <div className="Error__bg">
       <div className="Error__container">
         <div className="Error_Text">
           <h1>Hey! Are you lost?</h1>
           <Link to="/exercise">
-            <button className="btn draw-border">Back to exercises</button>
+            <button className="error__btn draw-border">Back to exercises</button>
           </Link>
         </div>
         <div className="Error__img">

@@ -9,11 +9,8 @@ export default function ExerciseList(props) {
         return (
           <Card
             // Props
-            title={exercise.title}
-            description={exercise.description}
-            img={exercise.img}
-            leftColor={exercise.leftColor}
-            rightColor={exercise.rightColor}
+            key={exercise.id}
+            {...exercise}
           />
         );
       })}

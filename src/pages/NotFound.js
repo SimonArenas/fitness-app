@@ -8,7 +8,7 @@ export default function NotFound() {
       <div className="Error__container">
         <div className="Error_Text">
           <h1>Hey! Are you lost?</h1>
-          <Link to="/exercise">
+          <Link to="/">
             <button className="error__btn draw-border">Back to exercises</button>
           </Link>
         </div>

@@ -1,0 +1,42 @@
+.Error-500__bg {
+    background: #3B293E;
+  
+    background-blend-mode: multiply, multiply;
+    width: 100vw;
+  
+    height: 100vh;
+  }
+  
+  .Error-500__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+  }
+  .Error-500__img img {
+    padding-top: 20px;
+    width: 50vw;
+  }
+  .Error-500_Text {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e6e6e6;
+    max-width: 500px;
+  }
+  
+  .Error-500__btn {
+    background: white;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem "Roboto Slab", sans-serif;
+    margin-top: 20px;
+    padding: .8em 1.5em;
+    letter-spacing: 0.05rem;
+  }
+  .Error-500__btn:focus {
+    outline: 2px dotted #55d7dc;
+  }
